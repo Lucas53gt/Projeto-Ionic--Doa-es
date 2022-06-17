@@ -24,3 +24,67 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.titulo{
+    text-align: center;
+}
+
+:root{
+    --ion-font-font-family: 'Tiro Gurmukhi', serif;
+
+    /* barra superior */
+  --ion-toolbar-background: #01A9DB;
+  --ion-toolbar-color: #fff100;
+
+  --ion-background-color: linear-gradient(180deg, #01A9DB 0%, #0040FF 100%);
+
+  /* barra inferior */
+  --ion-tab-bar-background: #01A9DB;
+  --ion-tab-bar-color: #44578a;
+  --ion-tab-bar-color-selected: #fff100;
+
+  --ion-text-color: white;
+  --inon-text-color-rgb: 255,255,255;
+
+  --ion-card-background: linear-gradient(139deg,#01A9DB 0%,transparent 100%);
+  --ion-item-background: transparent;
+}
+
+.conteudo{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+ion-card{
+    border-radius: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+ion-card:hover{
+    transform: scale(1.03);
+}
+
+.img-item{
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    max-width: 400px;
+}
+
+ion-thumbnail{
+    animation: imagem 4s infinite alternate;
+}
+
+@keyframes imagem {
+    0%{
+        transform: translate(0px, 5px) scale(1);
+    }
+    100%{
+        transform: translate(0px, -5px) scale(0.5);
+    }
+}
+
